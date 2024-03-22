@@ -1,6 +1,10 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        double GPA = 3.02;
+        String firstName = "abc";
+        String lastName = "xyz";
+
+        System.out.println(firstName + " " + lastName + " " + "has a GPA " + GPA);
     }
 
 }
