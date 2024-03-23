@@ -15,20 +15,35 @@ public class HelloWorld {
 //        sGPA = input.nextDouble();
 //        System.out.println(firstName + " " + lastName + " " + " now has a GPA " + sGPA);
 
+//
+//        int number;
+//        System.out.println("enter the number : ");
+//        Scanner input =new Scanner(System.in);
+//        number = input.nextInt();
+//        if(number>8){
+//            System.out.println("high");
+//        }
+//        else if (number >5){
+//            System.out.println("medium");
+//        }
+//        else{
+//            System.out.println("low");
+//        }
 
-        int number;
-        System.out.println("enter the number : ");
-        Scanner input =new Scanner(System.in);
-        number = input.nextInt();
-        if(number>8){
-            System.out.println("high");
+        Scanner input = new Scanner(System.in);
+
+        boolean isSongRepeat =  true;
+
+        while(isSongRepeat){
+            System.out.println("current song is playing");
+            System.out.println("are you want to repaet");
+            String song = input.next();
+
+            if("yes".equals(song)){
+                isSongRepeat = false;
+            }
         }
-        else if (number >5){
-            System.out.println("medium");
-        }
-        else{
-            System.out.println("low");
-        }
+        System.out.println("playing next song");
     }
 
 }
