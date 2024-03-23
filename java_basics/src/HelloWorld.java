@@ -11,11 +11,12 @@ public class HelloWorld {
         System.out.println("this is a teatime");
     }
 
-    public static void calculateTotalMealPrice(double tipRate, double taxRate, double listedPrice){
+    public static double calculateTotalMealPrice(double tipRate, double taxRate, double listedPrice){
         double tip = tipRate * listedPrice;
         double tax = taxRate * listedPrice;
         double result = listedPrice + tip + tax;
-        System.out.println("Your total meal price is " + result);
+        return result;
+//        System.out.println("Your total meal price is " + result);
     }
     public static void main(String[] args) {
 //        double sGPA = 3.02;
@@ -93,7 +94,11 @@ public class HelloWorld {
 //                    correctAnswer);
 //        }
 //        announceTeatime();
-        calculateTotalMealPrice(0.2, 0.08, 15);
+        double groupTotalMealCost = calculateTotalMealPrice(0.2, 0.08, 15);
+        System.out.println(groupTotalMealCost);
+
+        double individualCost = groupTotalMealCost/5;
+        System.out.println(individualCost);
     }
 
 }
